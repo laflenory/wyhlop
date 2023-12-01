@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const Feedback = () => {
   return (
-    <form className='flex flex-col gap-6'>
-      <div className='flex flex-row gap-6'>
+    <form className='flex flex-col gap-6 pt-8 lg:pt-0'>
+      <div className='flex flex-col gap-6 sm:flex-row'>
         <div className='w-full flex flex-col gap-4'>
           <label className='text-zinc-900 font-semibold'>* Имя</label>
           <input
