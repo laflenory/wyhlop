@@ -24,7 +24,7 @@ const Accordion = ({ items }: AccordionProps) => {
           onClick={() => handleClick(index)}
         >
           <div className='flex flex-row justify-between items-center gap-8'>
-            <h3 className={'max-w-lg text-lg text-zinc-900 font-semibold'}>
+            <h3 className={'max-w-lg text-zinc-900 font-semibold'}>
               {heading}
             </h3>
             <div className='text-xl'>
@@ -32,7 +32,7 @@ const Accordion = ({ items }: AccordionProps) => {
             </div>
           </div>
           {active === index && (
-            <p className='max-w-[95%] text-lg text-zinc-500'>{content}</p>
+            <p className='max-w-[95%] text-zinc-500'>{content}</p>
           )}
         </li>
       ))}

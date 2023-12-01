@@ -80,7 +80,7 @@ const Home = () => {
                   информацию. Свяжитесь с нами, и мы постараемся оперативно
                   помочь.
                 </p>
-                <ul className='flex flex-col gap-2 text-lg text-zinc-500 mb-8'>
+                <ul className='flex flex-col gap-2 text-zinc-500 mb-8'>
                   <li className='flex items-center gap-3'>
                     <div className='text-zinc-900'>
                       <FiMapPin />

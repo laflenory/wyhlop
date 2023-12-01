@@ -6,7 +6,17 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    fontFamily: {
+      sans: [
+        '"Inter var", sans-serif',
+        {
+          fontFeatureSettings: '"cv02", "cv03", "cv04", "cv11"',
+          fontVariationSettings: '"normal"',
+        },
+      ],
+    },
+  },
   plugins: [],
 };
 
