@@ -1,11 +1,14 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { Alert } from '@/components';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import type { HomeFormInputs } from './Feedback.types';
 
 const Feedback = () => {
+  const [isSend, setIsSend] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -13,6 +16,7 @@ const Feedback = () => {
   } = useForm<HomeFormInputs>({ reValidateMode: 'onSubmit' });
 
   const handleOnSubmit: SubmitHandler<HomeFormInputs> = (data) => {
+    setIsSend(true);
     console.log(data);
   };
 
@@ -84,6 +88,9 @@ const Feedback = () => {
           (errors.message && (
             <Alert type='error'>{errors.message.message}</Alert>
           ))}
+        {isSend && (
+          <Alert type='successful'>Сообщение успешно отправлено</Alert>
+        )}
         <p className='text-center text-zinc-500 md:text-right'>
           Отправляя эту форму, я соглашаюсь с{' '}
           <Link href='/' className='text-yellow-400 font-semibold'>
