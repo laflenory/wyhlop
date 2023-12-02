@@ -75,7 +75,7 @@ const Feedback = () => {
           })}
         />
       </div>
-      <div className='flex flex-col gap-6 md:items-end'>
+      <div className='flex flex-col gap-6 lg:items-end'>
         {(errors.firstName && (
           <Alert type='error'>{errors.firstName.message}</Alert>
         )) ||
