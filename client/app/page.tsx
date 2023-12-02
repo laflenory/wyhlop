@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { Feedback, Wrapper } from '@/components';
+import { Accordion, Feedback, Wrapper } from '@/components';
 import { FiMapPin, FiPhone, FiMail, FiArrowRight } from 'react-icons/fi';
-import { Accordion } from '@/components/Accordion';
 
 const Home = () => {
   const questions = [
