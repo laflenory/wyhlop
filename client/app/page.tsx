@@ -126,13 +126,6 @@ const Home = () => {
                     полезной информацией от наших экспертов.
                   </p>
                 </div>
-                <Link
-                  href='/blog/page/1'
-                  className='flex flex-row gap-2 items-center text-lg text-zinc-900'
-                >
-                  Перейти в блог
-                  <FiArrowRight />
-                </Link>
               </div>
             </header>
             <div className='py-8 lg:p-8'>
