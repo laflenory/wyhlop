@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Accordion, Feedback, Wrapper } from '@/components';
+import { Accordion, Feedback, Map, Wrapper } from '@/components';
 import { FiMapPin, FiPhone, FiMail, FiArrowRight } from 'react-icons/fi';
 
 const Home = () => {
@@ -105,7 +105,9 @@ const Home = () => {
                     laflenory@wyhlop.com
                   </li>
                 </ul>
-                <div className='rounded-lg h-[280px] bg-zinc-100'></div>
+                <div className='rounded-lg h-[280px] bg-zinc-100'>
+                  <Map />
+                </div>
               </div>
               <div className='w-full lg:w-1/2 lg:p-8'>
                 <Feedback />
