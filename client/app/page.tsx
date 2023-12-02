@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Accordion, Feedback, Map, Wrapper } from '@/components';
+import { Accordion, Blog, Feedback, Map, Wrapper } from '@/components';
 import { FiMapPin, FiPhone, FiMail, FiArrowRight } from 'react-icons/fi';
 
 const Home = () => {
@@ -135,7 +135,9 @@ const Home = () => {
                 </Link>
               </div>
             </header>
-            <div className='lg:p-8'></div>
+            <div className='py-8 lg:p-8'>
+              <Blog />
+            </div>
           </Wrapper>
         </section>
       </main>
