@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FiArrowRight } from 'react-icons/fi';
 import { LuClock } from 'react-icons/lu';
 import background from '@/public/article.jpg';
 import avatar from '@/public/avatar.png';
@@ -38,8 +39,12 @@ const Blog = () => {
                 Artyom Tarasov
               </p>
             </div>
-            <Link href='/' className='text-yellow-400 font-semibold'>
+            <Link
+              href='/'
+              className='flex flex-row gap-2 items-center text-zinc-900 font-semibold'
+            >
               Продолжить чтение
+              <FiArrowRight />
             </Link>
           </div>
         </article>
