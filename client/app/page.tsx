@@ -104,8 +104,11 @@ const Home = () => {
                 </p>
               </header>
               <div className='grid grid-cols-1 gap-x-6 gap-y-6 mt-16 lg:grid-cols-2'>
-                {advantages.map(({ heading, content, icon }) => (
-                  <article className='flex flex-col border border-zinc-300 rounded-lg p-8'>
+                {advantages.map(({ icon, heading, content }, index) => (
+                  <article
+                    className='flex flex-col border border-zinc-300 rounded-lg p-8'
+                    key={index}
+                  >
                     <header className='flex flex-col gap-6 text-zinc-900 font-bold'>
                       <div className='text-2xl'>{icon}</div>
                       <h3 className='text-lg'>{heading}</h3>
