@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { FaVk, FaOdnoklassniki, FaFacebook, FaYoutube } from 'react-icons/fa';
 import logotype from '@/public/logotype.png';
 
@@ -13,22 +14,47 @@ const Footer = () => {
           Гродно
         </p>
       </div>
-      <div className='flex flex-col gap-8'>
-        <ul className='flex flex-wrap flex-row gap-8 justify-center'>
+      <div className='w-full flex flex-col gap-8 sm:w-fit'>
+        <ul className='flex flex-wrap flex-col gap-8 justify-center sm:flex-row'>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/'>Главная</Link>
+            <Link href='/' className='flex flex-row justify-between'>
+              Главная
+              <div className='block text-2xl sm:hidden'>
+                <FiArrowUpRight />
+              </div>
+            </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/'>О нас</Link>
+            <Link href='/' className='flex flex-row justify-between'>
+              О нас
+              <div className='block text-2xl sm:hidden'>
+                <FiArrowUpRight />
+              </div>
+            </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/'>Наши преимущества</Link>
+            <Link href='/' className='flex flex-row justify-between'>
+              Наши преимущества
+              <div className='block text-2xl sm:hidden'>
+                <FiArrowUpRight />
+              </div>
+            </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/'>Наши услуги</Link>
+            <Link href='/' className='flex flex-row justify-between'>
+              Наши услуги
+              <div className='block text-2xl sm:hidden'>
+                <FiArrowUpRight />
+              </div>
+            </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/'>Блог</Link>
+            <Link href='/' className='flex flex-row justify-between'>
+              Блог
+              <div className='block text-2xl sm:hidden'>
+                <FiArrowUpRight />
+              </div>
+            </Link>
           </li>
         </ul>
         <ul className='flex flex-wrap flex-row gap-8 justify-center lg:justify-end'>
