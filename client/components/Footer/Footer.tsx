@@ -5,12 +5,12 @@ import logotype from '@/public/logotype.png';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col items-center justify-between gap-12 bg-zinc-900 mt-24 p-12 lg:flex-row lg:p-24'>
+    <footer className='flex flex-col items-center justify-between gap-8 bg-zinc-900 mt-24 p-12 lg:flex-row lg:p-16'>
       <div className='flex flex-col gap-6 items-center lg:items-start'>
         <Image src={logotype} alt='logotype' />
         <p className='max-w-sm text-zinc-400 text-center lg:text-left'>
           Первая специализированная мастерская по ремонту выхлопных систем в г.
-          Гродно.
+          Гродно
         </p>
       </div>
       <div className='flex flex-col gap-8'>
