@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Accordion,
   Blog,
@@ -6,6 +7,7 @@ import {
   Footer,
   Map,
   Partners,
+  Stats,
   Wrapper,
 } from '@/components';
 import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
@@ -16,6 +18,10 @@ import {
   LuRefreshCcw,
   LuThumbsUp,
 } from 'react-icons/lu';
+
+import mastercard from '@/public/mastercard.svg';
+import visa from '@/public/visa.svg';
+import belcart from '@/public/belcart.svg';
 
 const Home = () => {
   const questions = [
@@ -94,14 +100,93 @@ const Home = () => {
 
   return (
     <>
-      <main className='flex flex-col gap-16'>
+      <main className='flex flex-col gap-12'>
+        <section>
+          <Wrapper>
+            <div className='flex flex-col gap-8 lg:flex-row'>
+              <div className='w-full lg:w-1/2 lg:p-8'>
+                <div className='flex flex-col gap-8'>
+                  <div className='h-[320px] bg-zinc-100 rounded-lg'></div>
+                  <div>
+                    <h3 className='text-2xl text-zinc-900 font-bold'>
+                      Режим работы
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 className='text-2xl text-zinc-900 font-bold'>Оплата</h3>
+                    <p className='text-zinc-500 my-4'>
+                      У нас вы можете оплатить наличными, а также карточками
+                      популярных платёжных систем.
+                    </p>
+                    <ul className='flex flex-row gap-8 items-center flex-wrap'>
+                      <li>
+                        <Image src={mastercard} alt='mastercard' />
+                      </li>
+                      <li>
+                        <Image src={visa} alt='mastercard' />
+                      </li>
+                      <li>
+                        <Image src={belcart} alt='mastercard' />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className='w-full lg:w-1/2 lg:p-8'>
+                <header className='flex flex-col gap-4'>
+                  <p className='text-yellow-400'>О нас</p>
+                  <h2 className='text-3xl text-zinc-900 font-bold'>
+                    Мастерская выхлопных систем. Превратим звук в мелодию, а
+                    проблемы в решения!
+                  </h2>
+                </header>
+                <div className='flex flex-col gap-2 mt-4 divide-y'>
+                  <div className='flex flex-col gap-4 pb-4'>
+                    <p className='text-zinc-500'>
+                      С момента своего основания в 2002 году мы специализируемся
+                      исключительно на ремонте выхлопных систем, особенно
+                      глушителей. Наши работы говорят сами за себя, превосходя
+                      стандартные сервисы. Мы не просто ремонтируем, мы создаем
+                      качество.
+                    </p>
+                    <p className='text-zinc-500'>
+                      Консультации, комплексная диагностика, ремонт, тюнинг —
+                      наша мастерская предоставляет полный спектр услуг. Мы
+                      уверены в нашем профессионализме и готовы решать любые
+                      нестандартные ситуации. Глушители, сажевые фильтры,
+                      каталитические нейтрализаторы — мы знаем все о выхлопных
+                      системах.
+                    </p>
+                    <p className='text-zinc-500'>
+                      Мы гарантируем не только качество своей работы, но и
+                      пожизненную гарантию на сварочные швы. Для нас важно не
+                      просто ремонтировать, а стремиться к идеалу. Доверие
+                      клиентов — наше главное достижение.
+                    </p>
+                    <p className='text-zinc-500'>
+                      Наша мастерская оборудована современным оборудованием,
+                      позволяющим проводить ремонт выхлопных систем даже в
+                      большегрузах и автобусах. Мы не останавливаемся на
+                      достигнутом и постоянно развиваемся.
+                    </p>
+                    <p className='text-zinc-500'>
+                      У нас вы не просто ремонтируете автомобиль, а
+                      наслаждаетесь комфортом. Бесплатный Wi-Fi, оплата
+                      банковскими картами, квалифицированная помощь в выборе
+                      запчастей — мы делаем все для вашего удобства.
+                    </p>
+                  </div>
+                  <Stats />
+                </div>
+              </div>
+            </div>
+          </Wrapper>
+        </section>
         <section>
           <Wrapper>
             <div className='flex flex-col lg:p-8'>
               <header className='flex flex-col justify-center items-center gap-4'>
-                <p className='text-yellow-400 font-semibold'>
-                  Наши преимущества
-                </p>
+                <p className='text-yellow-400'>Наши преимущества</p>
                 <h2 className='max-w-lg text-center text-3xl text-zinc-900 font-bold'>
                   Делаем ремонт выхлопной системы простым и доступным
                 </h2>
