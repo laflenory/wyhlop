@@ -42,8 +42,8 @@ const Blog = () => {
         </article>
       </div>
       <div className='w-full divide-y lg:w-1/2'>
-        <Link href='/'>
-          <article className='group flex flex-col'>
+        <article>
+          <Link href='/' className='group flex flex-col'>
             <p className='text-zinc-400 text-sm mb-4'>Декабрь 02, 2023</p>
             <h3 className='text-lg text-zinc-900 font-bold group-hover:text-yellow-400 group-hover:underline'>
               We’re incredibly proud to announce we have secured $75m in Series
@@ -63,10 +63,10 @@ const Blog = () => {
                 Artyom Tarasov
               </p>
             </div>
-          </article>
-        </Link>
-        <Link href='/'>
-          <article className='group flex flex-col'>
+          </Link>
+        </article>
+        <article>
+          <Link href='/' className='group flex flex-col'>
             <p className='text-zinc-400 text-sm my-4'>Декабрь 02, 2023</p>
             <h3 className='text-lg text-zinc-900 font-bold group-hover:text-yellow-400 group-hover:underline'>
               We’re incredibly proud to announce we have secured $75m in Series
@@ -86,10 +86,10 @@ const Blog = () => {
                 Artyom Tarasov
               </p>
             </div>
-          </article>
-        </Link>
-        <Link href='/'>
-          <article className='group flex flex-col'>
+          </Link>
+        </article>
+        <article>
+          <Link href='/' className='group flex flex-col'>
             <p className='text-zinc-400 text-sm my-4'>Декабрь 02, 2023</p>
             <h3 className='text-lg text-zinc-900 font-bold group-hover:text-yellow-400 group-hover:underline'>
               We’re incredibly proud to announce we have secured $75m in Series
@@ -109,10 +109,10 @@ const Blog = () => {
                 Artyom Tarasov
               </p>
             </div>
-          </article>
-        </Link>
-        <Link href='/'>
-          <article className='group flex flex-col'>
+          </Link>
+        </article>
+        <article>
+          <Link href='/' className='group flex flex-col'>
             <p className='text-zinc-400 text-sm my-4'>Декабрь 02, 2023</p>
             <h3 className='text-lg text-zinc-900 font-bold group-hover:text-yellow-400 group-hover:underline'>
               We’re incredibly proud to announce we have secured $75m in Series
@@ -132,8 +132,8 @@ const Blog = () => {
                 Artyom Tarasov
               </p>
             </div>
-          </article>
-        </Link>
+          </Link>
+        </article>
       </div>
     </div>
   );
