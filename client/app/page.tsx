@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Accordion, Blog, Feedback, Map, Wrapper } from '@/components';
+import { Accordion, Blog, Feedback, Footer, Map, Wrapper } from '@/components';
 import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
 import {
   LuTrendingUp,
@@ -207,6 +207,7 @@ const Home = () => {
           </Wrapper>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
