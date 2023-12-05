@@ -7,10 +7,10 @@ import avatar from '@/public/avatar.png';
 
 const Blog = () => {
   return (
-    <div className='flex flex-col divide-y gap-8 lg:flex-row lg:gap-14 lg:divide-y-0'>
+    <div className='flex flex-col items-center divide-y gap-8 lg:flex-row lg:gap-14 lg:divide-y-0'>
       <div className='w-full lg:w-1/2'>
         <article className='flex flex-col'>
-          <div className='h-[420px] bg-zinc-100'>
+          <div className='h-[360px] bg-zinc-100'>
             <Image
               src={background}
               className='rounded-lg relative object-cover w-full h-full'

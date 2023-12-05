@@ -1,5 +1,13 @@
 import Link from 'next/link';
-import { Accordion, Blog, Feedback, Footer, Map, Wrapper } from '@/components';
+import {
+  Accordion,
+  Blog,
+  Feedback,
+  Footer,
+  Map,
+  Partners,
+  Wrapper,
+} from '@/components';
 import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
 import {
   LuTrendingUp,
@@ -201,9 +209,14 @@ const Home = () => {
                 </div>
               </div>
             </header>
-            <div className='py-8 lg:p-8'>
+            <div className='pt-8 lg:p-8'>
               <Blog />
             </div>
+          </Wrapper>
+        </section>
+        <section>
+          <Wrapper>
+            <Partners />
           </Wrapper>
         </section>
       </main>
