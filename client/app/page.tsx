@@ -119,13 +119,13 @@ const Home = () => {
                       популярных платёжных систем.
                     </p>
                     <ul className='flex flex-row gap-4 items-center justify-center flex-wrap'>
-                      <li className='flex items-center justify-center h-[80px] w-[120px] bg-zinc-100 rounded-lg p-2'>
+                      <li className='flex items-center justify-center h-[80px] w-[120px] border border-zinc-200 bg-zinc-100 rounded-lg p-2'>
                         <Image src={mastercard} alt='mastercard' />
                       </li>
-                      <li className='flex items-center justify-center h-[80px] w-[120px] bg-zinc-100 rounded-lg p-2'>
+                      <li className='flex items-center justify-center h-[80px] w-[120px] border border-zinc-200 bg-zinc-100 rounded-lg p-2'>
                         <Image src={visa} alt='mastercard' />
                       </li>
-                      <li className='flex items-center justify-center h-[80px] w-[120px] bg-zinc-100 rounded-lg p-2'>
+                      <li className='flex items-center justify-center h-[80px] w-[120px] border border-zinc-200 bg-zinc-100 rounded-lg p-2'>
                         <Image src={belcart} alt='mastercard' />
                       </li>
                     </ul>
