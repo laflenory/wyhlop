@@ -27,8 +27,8 @@ const Services = () => {
           {services.map(({ heading }, index) => (
             <li
               className={`cursor-pointer rounded-lg border-2 border-zinc-300 px-3 py-2 text-zinc-900 ${
-                active === index ? 'border-yellow-400 bg-yellow-400' : null
-              } hover:border-yellow-300 hover:bg-yellow-300`}
+                active === index ? 'border-yellow-300 bg-yellow-300' : null
+              } hover:border-yellow-200 hover:bg-yellow-200`}
               key={index}
               onClick={() => handleClick(index)}
             >

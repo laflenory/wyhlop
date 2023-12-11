@@ -8,7 +8,7 @@ const Item = ({ title, value }: { title: string; value: number }) => {
   const rounded = useTransform(motionValue, Math.round);
 
   useEffect(() => {
-    const animation = animate(motionValue, value, { duration: 5 });
+    const animation = animate(motionValue, value, { duration: 2 });
     return animation.stop;
   }, []);
 
