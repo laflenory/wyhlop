@@ -7,6 +7,7 @@ import {
   Footer,
   Map,
   Partners,
+  Services,
   Stats,
   Wrapper,
 } from '@/components';
@@ -179,6 +180,19 @@ const Home = () => {
                   <Stats />
                 </div>
               </div>
+            </div>
+          </Wrapper>
+        </section>
+        <section>
+          <Wrapper>
+            <div className='flex flex-col lg:p-8'>
+              <header className='flex flex-col gap-4'>
+                <p className='text-yellow-400'>Спектр наших услуг</p>
+                <h2 className='max-w-xl text-3xl font-bold text-zinc-900'>
+                  Производим ремонт выхлопной системы любой сложности
+                </h2>
+              </header>
+              <Services />
             </div>
           </Wrapper>
         </section>

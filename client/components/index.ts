@@ -5,5 +5,6 @@ export { Feedback } from './Feedback';
 export { Footer } from './Footer';
 export { Map } from './Map';
 export { Partners } from './Partners';
+export { Services } from './Services';
 export { Stats } from './Stats';
 export { Wrapper } from './Wrapper';
