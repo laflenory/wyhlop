@@ -19,12 +19,12 @@ const Accordion = ({ items }: AccordionProps) => {
     <ul className='flex flex-col gap-2 divide-y'>
       {items.map(({ heading, content }, index) => (
         <li
-          className='flex flex-col gap-2 py-4 cursor-pointer'
+          className='flex cursor-pointer flex-col gap-2 py-4'
           key={index}
           onClick={() => handleClick(index)}
         >
-          <div className='flex flex-row justify-between items-center gap-8'>
-            <h3 className={'max-w-lg text-zinc-900 font-semibold'}>
+          <div className='flex flex-row items-center justify-between gap-8'>
+            <h3 className={'max-w-lg font-semibold text-zinc-900'}>
               {heading}
             </h3>
             <div className='text-xl'>

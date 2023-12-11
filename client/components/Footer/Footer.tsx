@@ -6,16 +6,16 @@ import logotype from '@/public/logotype.png';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col items-center justify-between gap-8 mt-8 bg-zinc-900 p-12 lg:flex-row lg:p-16'>
-      <div className='flex flex-col gap-6 items-center lg:items-start'>
+    <footer className='mt-8 flex flex-col items-center justify-between gap-8 bg-zinc-900 p-12 lg:flex-row lg:p-16'>
+      <div className='flex flex-col items-center gap-6 lg:items-start'>
         <Image src={logotype} alt='logotype' />
-        <p className='max-w-sm text-zinc-400 text-center lg:text-left'>
+        <p className='max-w-sm text-center text-zinc-400 lg:text-left'>
           Первая специализированная мастерская по ремонту выхлопных систем в г.
           Гродно
         </p>
       </div>
-      <div className='w-full flex flex-col gap-8 sm:w-fit'>
-        <ul className='flex flex-wrap flex-col gap-8 justify-center sm:flex-row'>
+      <div className='flex w-full flex-col gap-8 sm:w-fit'>
+        <ul className='flex flex-col flex-wrap justify-center gap-8 sm:flex-row'>
           <li className='text-zinc-400 hover:text-yellow-400'>
             <Link href='/' className='flex flex-row justify-between'>
               Главная
@@ -57,23 +57,23 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <ul className='flex flex-wrap flex-row gap-8 justify-center lg:justify-end'>
-          <li className='text-zinc-400 text-2xl hover:text-yellow-400'>
+        <ul className='flex flex-row flex-wrap justify-center gap-8 lg:justify-end'>
+          <li className='text-2xl text-zinc-400 hover:text-yellow-400'>
             <Link href='/'>
               <FaVk />
             </Link>
           </li>
-          <li className='text-zinc-400 text-2xl hover:text-yellow-400'>
+          <li className='text-2xl text-zinc-400 hover:text-yellow-400'>
             <Link href='/'>
               <FaOdnoklassniki />
             </Link>
           </li>
-          <li className='text-zinc-400 text-2xl hover:text-yellow-400'>
+          <li className='text-2xl text-zinc-400 hover:text-yellow-400'>
             <Link href='/'>
               <FaFacebook />
             </Link>
           </li>
-          <li className='text-zinc-400 text-2xl hover:text-yellow-400'>
+          <li className='text-2xl text-zinc-400 hover:text-yellow-400'>
             <Link href='/'>
               <FaYoutube />
             </Link>

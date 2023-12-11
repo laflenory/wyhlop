@@ -106,26 +106,26 @@ const Home = () => {
             <div className='flex flex-col gap-8 lg:flex-row'>
               <div className='w-full lg:w-1/2 lg:p-8'>
                 <div className='flex flex-col gap-8'>
-                  <div className='h-[320px] bg-zinc-100 rounded-lg'></div>
+                  <div className='h-[320px] rounded-lg bg-zinc-100'></div>
                   <div>
-                    <h3 className='text-2xl text-zinc-900 font-bold'>
+                    <h3 className='text-2xl font-bold text-zinc-900'>
                       Режим работы
                     </h3>
                   </div>
                   <div>
-                    <h3 className='text-2xl text-zinc-900 font-bold'>Оплата</h3>
-                    <p className='text-zinc-500 my-4'>
+                    <h3 className='text-2xl font-bold text-zinc-900'>Оплата</h3>
+                    <p className='my-4 text-zinc-500'>
                       У нас вы можете оплатить наличными, а также карточками
                       популярных платёжных систем.
                     </p>
-                    <ul className='flex flex-row gap-4 items-center justify-center flex-wrap'>
-                      <li className='flex items-center justify-center h-[80px] w-[120px] border border-zinc-200 bg-zinc-100 rounded-lg p-2'>
+                    <ul className='flex flex-row flex-wrap items-center justify-center gap-4'>
+                      <li className='flex h-[80px] w-[120px] items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 p-2'>
                         <Image src={mastercard} alt='mastercard' />
                       </li>
-                      <li className='flex items-center justify-center h-[80px] w-[120px] border border-zinc-200 bg-zinc-100 rounded-lg p-2'>
+                      <li className='flex h-[80px] w-[120px] items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 p-2'>
                         <Image src={visa} alt='mastercard' />
                       </li>
-                      <li className='flex items-center justify-center h-[80px] w-[120px] border border-zinc-200 bg-zinc-100 rounded-lg p-2'>
+                      <li className='flex h-[80px] w-[120px] items-center justify-center rounded-lg border border-zinc-200 bg-zinc-100 p-2'>
                         <Image src={belcart} alt='mastercard' />
                       </li>
                     </ul>
@@ -135,12 +135,12 @@ const Home = () => {
               <div className='w-full lg:w-1/2 lg:p-8'>
                 <header className='flex flex-col gap-4'>
                   <p className='text-yellow-400'>О нас</p>
-                  <h2 className='text-3xl text-zinc-900 font-bold'>
+                  <h2 className='text-3xl font-bold text-zinc-900'>
                     Мастерская выхлопных систем. Превратим звук в мелодию, а
                     проблемы в решения!
                   </h2>
                 </header>
-                <div className='flex flex-col gap-2 mt-4 divide-y'>
+                <div className='mt-4 flex flex-col gap-2 divide-y'>
                   <div className='flex flex-col gap-4 pb-4'>
                     <p className='text-zinc-500'>
                       С момента своего основания в 2002 году мы специализируемся
@@ -185,24 +185,24 @@ const Home = () => {
         <section>
           <Wrapper>
             <div className='flex flex-col lg:p-8'>
-              <header className='flex flex-col justify-center items-center gap-4'>
+              <header className='flex flex-col items-center justify-center gap-4'>
                 <p className='text-yellow-400'>Наши преимущества</p>
-                <h2 className='max-w-lg text-center text-3xl text-zinc-900 font-bold'>
+                <h2 className='max-w-lg text-center text-3xl font-bold text-zinc-900'>
                   Делаем ремонт выхлопной системы простым и доступным
                 </h2>
-                <p className='max-w-xl text-lg text-center text-zinc-500'>
+                <p className='max-w-xl text-center text-lg text-zinc-500'>
                   С 2002 года мы занимаемся исключительно ремонтом выхлопных
                   систем автомобилей и гарантируем качество выполнения работ на
                   порядок выше, чем на универсальных СТО.
                 </p>
               </header>
-              <div className='grid grid-cols-1 gap-x-6 gap-y-6 mt-16 lg:grid-cols-2'>
+              <div className='mt-16 grid grid-cols-1 gap-x-6 gap-y-6 lg:grid-cols-2'>
                 {advantages.map(({ icon, heading, content }, index) => (
                   <article
-                    className='flex flex-col border border-zinc-300 rounded-lg p-8'
+                    className='flex flex-col rounded-lg border border-zinc-300 p-8'
                     key={index}
                   >
-                    <header className='flex flex-col gap-6 text-zinc-900 font-bold'>
+                    <header className='flex flex-col gap-6 font-bold text-zinc-900'>
                       <div className='text-2xl'>{icon}</div>
                       <h3 className='text-lg'>{heading}</h3>
                     </header>
@@ -218,13 +218,13 @@ const Home = () => {
             <div className='flex flex-col lg:flex-row'>
               <div className='w-full lg:w-1/2 lg:p-8'>
                 <header>
-                  <h2 className='text-3xl text-zinc-900 font-bold'>
+                  <h2 className='text-3xl font-bold text-zinc-900'>
                     Часто задаваемые вопросы
                   </h2>
-                  <p className='max-w-xl text-lg text-zinc-500 mt-4 mb-8'>
+                  <p className='mb-8 mt-4 max-w-xl text-lg text-zinc-500'>
                     Не можете найти ответ на интересующий вас вопрос? Обратитесь
                     в нашу{' '}
-                    <Link href='/' className='text-yellow-400 font-semibold'>
+                    <Link href='/' className='font-semibold text-yellow-400'>
                       службу поддержки
                     </Link>{' '}
                     клиентов.
@@ -242,36 +242,36 @@ const Home = () => {
             <div className='flex flex-col lg:flex-row'>
               <div className='w-full lg:w-1/2 lg:p-8'>
                 <header>
-                  <h2 className='text-3xl text-zinc-900 font-bold'>
+                  <h2 className='text-3xl font-bold text-zinc-900'>
                     Связаться
                   </h2>
-                  <p className='max-w-xl text-lg text-zinc-500 mt-4 mb-8'>
+                  <p className='mb-8 mt-4 max-w-xl text-lg text-zinc-500'>
                     Готовы ответить на ваши вопросы и предоставить необходимую
                     информацию. Свяжитесь с нами, и мы постараемся оперативно
                     помочь.
                   </p>
                 </header>
-                <ul className='flex flex-col gap-4 text-zinc-500 mb-8'>
+                <ul className='mb-8 flex flex-col gap-4 text-zinc-500'>
                   <li className='flex items-center gap-3'>
-                    <div className='text-zinc-900 text-xl'>
+                    <div className='text-xl text-zinc-900'>
                       <FiMapPin />
                     </div>
                     г. Гродно, ул. Суворова, 109
                   </li>
                   <li className='flex items-center gap-3'>
-                    <div className='text-zinc-900 text-xl'>
+                    <div className='text-xl text-zinc-900'>
                       <FiPhone />
                     </div>
                     +375 (29) 889-66-10
                   </li>
                   <li className='flex items-center gap-3'>
-                    <div className='text-zinc-900 text-xl'>
+                    <div className='text-xl text-zinc-900'>
                       <FiMail />
                     </div>
                     laflenory@wyhlop.com
                   </li>
                 </ul>
-                <div className='rounded-lg h-[280px] bg-zinc-100'>
+                <div className='h-[280px] rounded-lg bg-zinc-100'>
                   <Map />
                 </div>
               </div>
@@ -283,11 +283,11 @@ const Home = () => {
         </section>
         <section>
           <Wrapper>
-            <header className='w-full bb-1 lg:p-8'>
-              <div className='flex flex-row justify-between items-center gap-8 border-b border-gray-200'>
+            <header className='bb-1 w-full lg:p-8'>
+              <div className='flex flex-row items-center justify-between gap-8 border-b border-gray-200'>
                 <div>
-                  <h2 className='text-3xl text-zinc-900 font-bold'>Из блога</h2>
-                  <p className='max-w-xl text-lg text-zinc-500 mt-4 mb-8'>
+                  <h2 className='text-3xl font-bold text-zinc-900'>Из блога</h2>
+                  <p className='mb-8 mt-4 max-w-xl text-lg text-zinc-500'>
                     Советы по ремонту выхлопных систем. Следите за новостями и
                     полезной информацией от наших экспертов.
                   </p>

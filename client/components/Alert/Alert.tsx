@@ -5,7 +5,7 @@ const Alert = ({ children, type }: AlertProps) => {
   switch (type) {
     case 'successful': {
       return (
-        <div className='w-full rounded-lg flex flex-row justify-center items-center gap-3 p-3 bg-green-200 text-green-800 lg:justify-start'>
+        <div className='flex w-full flex-row items-center justify-center gap-3 rounded-lg bg-green-200 p-3 text-green-800 lg:justify-start'>
           <div className='text-lg'>
             <FiCheckCircle />
           </div>
@@ -15,7 +15,7 @@ const Alert = ({ children, type }: AlertProps) => {
     }
     case 'error': {
       return (
-        <div className='w-full rounded-lg flex flex-row justify-center items-center gap-3 p-3 bg-red-200 text-red-800 lg:justify-start'>
+        <div className='flex w-full flex-row items-center justify-center gap-3 rounded-lg bg-red-200 p-3 text-red-800 lg:justify-start'>
           <div className='text-lg'>
             <FiAlertCircle />
           </div>

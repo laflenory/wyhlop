@@ -6,7 +6,7 @@ const YandexMap = () => {
   return (
     <YMaps>
       <Map
-        className='w-full h-full'
+        className='h-full w-full'
         defaultState={{ center: [53.656997, 23.802965], zoom: 16 }}
       >
         <Placemark defaultGeometry={[53.656997, 23.802965]} />

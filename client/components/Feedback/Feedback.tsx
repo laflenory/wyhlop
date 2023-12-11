@@ -26,50 +26,50 @@ const Feedback = () => {
       onSubmit={handleSubmit(handleOnSubmit)}
     >
       <div className='flex flex-col gap-6 sm:flex-row'>
-        <div className='w-full flex flex-col gap-4'>
-          <label className='text-zinc-900 font-semibold'>* Имя</label>
+        <div className='flex w-full flex-col gap-4'>
+          <label className='font-semibold text-zinc-900'>* Имя</label>
           <input
             placeholder='Введите имя'
-            className=' max-w-full text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
+            className=' max-w-full rounded-lg px-4 py-3 text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
             {...register('firstName', {
               required: 'Поле Имя обязательно для ввода',
             })}
           />
         </div>
-        <div className='w-full flex flex-col gap-4'>
-          <label className='text-zinc-900 font-semibold'>* Фамилия</label>
+        <div className='flex w-full flex-col gap-4'>
+          <label className='font-semibold text-zinc-900'>* Фамилия</label>
           <input
             placeholder='Введите фамилию'
-            className='max-w-full text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
+            className='max-w-full rounded-lg px-4 py-3 text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
             {...register('lastName', {
               required: 'Поле Фамилия обязательно для ввода',
             })}
           />
         </div>
       </div>
-      <div className='w-full flex flex-col gap-4'>
-        <label className='text-zinc-900 font-semibold'>* E-Mail</label>
+      <div className='flex w-full flex-col gap-4'>
+        <label className='font-semibold text-zinc-900'>* E-Mail</label>
         <input
           placeholder='Введите E-Mail'
-          className='text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
+          className='rounded-lg px-4 py-3 text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
           {...register('email', {
             required: 'Поле E-Mail обязательно для ввода',
           })}
         />
       </div>
-      <div className='w-full flex flex-col gap-4'>
-        <label className='text-zinc-900 font-semibold'>Номер телефона</label>
+      <div className='flex w-full flex-col gap-4'>
+        <label className='font-semibold text-zinc-900'>Номер телефона</label>
         <input
           placeholder='Введите номер телефона'
-          className='text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
+          className='rounded-lg px-4 py-3 text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
           {...register('phoneNumber')}
         />
       </div>
-      <div className='w-full flex flex-col gap-4'>
-        <label className='text-zinc-900 font-semibold'>* Сообщение</label>
+      <div className='flex w-full flex-col gap-4'>
+        <label className='font-semibold text-zinc-900'>* Сообщение</label>
         <textarea
           placeholder='Введите сообщение'
-          className='text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 rounded-lg px-4 py-3 resize-none h-[160px] focus:ring-2 focus:ring-inset focus:ring-yellow-300'
+          className='h-[160px] resize-none rounded-lg px-4 py-3 text-zinc-900 outline-none ring-2 ring-inset ring-zinc-300 focus:ring-2 focus:ring-inset focus:ring-yellow-300'
           {...register('message', {
             required: 'Поле Сообщение обязательно для ввода',
           })}
@@ -93,7 +93,7 @@ const Feedback = () => {
         )}
         <p className='text-center text-zinc-500 md:text-right'>
           Отправляя эту форму, я соглашаюсь с{' '}
-          <Link href='/' className='text-yellow-400 font-semibold'>
+          <Link href='/' className='font-semibold text-yellow-400'>
             политикой конфиденциальности
           </Link>
           .
@@ -101,7 +101,7 @@ const Feedback = () => {
         <input
           value='Отправить сообщение'
           type='submit'
-          className='text-zinc-900 outline-none rounded-lg bg-yellow-300 px-6 py-3 cursor-pointer hover:bg-yellow-200'
+          className='cursor-pointer rounded-lg bg-yellow-300 px-6 py-3 text-zinc-900 outline-none hover:bg-yellow-200'
         />
       </div>
     </form>
