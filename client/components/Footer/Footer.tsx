@@ -34,7 +34,7 @@ const Footer = () => {
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
             <Link href='/' className='flex flex-row justify-between'>
-              Наши преимущества
+              Услуги
               <div className='block text-2xl sm:hidden'>
                 <FiArrowUpRight />
               </div>
@@ -42,7 +42,7 @@ const Footer = () => {
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
             <Link href='/' className='flex flex-row justify-between'>
-              Наши услуги
+              Контакты
               <div className='block text-2xl sm:hidden'>
                 <FiArrowUpRight />
               </div>

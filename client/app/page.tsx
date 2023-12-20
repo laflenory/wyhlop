@@ -5,6 +5,7 @@ import {
   Blog,
   Feedback,
   Footer,
+  Header,
   Map,
   Partners,
   Services,
@@ -101,6 +102,7 @@ const Home = () => {
 
   return (
     <>
+      <Header />
       <main className='flex flex-col gap-12'>
         <section>
           <Wrapper>

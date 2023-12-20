@@ -3,6 +3,7 @@ export { Alert } from './Alert';
 export { Blog } from './Blog';
 export { Feedback } from './Feedback';
 export { Footer } from './Footer';
+export { Header } from './Header';
 export { Map } from './Map';
 export { Partners } from './Partners';
 export { Services } from './Services';

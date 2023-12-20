@@ -101,7 +101,7 @@ const Feedback = () => {
         <input
           value='Отправить сообщение'
           type='submit'
-          className='cursor-pointer rounded-lg bg-yellow-300 px-6 py-3 text-zinc-900 outline-none hover:bg-yellow-200'
+          className='cursor-pointer rounded-lg bg-yellow-400 px-6 py-3 text-zinc-900 outline-none hover:bg-yellow-300'
         />
       </div>
     </form>
