@@ -12,7 +12,13 @@ import {
   Stats,
   Wrapper,
 } from '@/components';
-import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
+import {
+  FiMapPin,
+  FiPhone,
+  FiMail,
+  FiCreditCard,
+  FiClock,
+} from 'react-icons/fi';
 import {
   LuTrendingUp,
   LuWrench,
@@ -110,13 +116,22 @@ const Home = () => {
               <div className='w-full lg:w-1/2 lg:p-8'>
                 <div className='flex flex-col gap-8'>
                   <div className='h-[320px] rounded-lg bg-zinc-100'></div>
-                  <div>
-                    <h3 className='text-2xl font-bold text-zinc-900'>
+                  <div className='flex flex-col'>
+                    <h3 className='flex flex-row items-center gap-3 text-2xl font-bold text-zinc-900'>
+                      <FiClock />
                       Режим работы
                     </h3>
+                    <ul className='flex flex-col text-zinc-400'>
+                      <li>ПН - ПТ: 09:00 - 18:00</li>
+                      <li>СБ: 09:00 - 14:00</li>
+                      <li>ВС: выходной</li>
+                    </ul>
                   </div>
-                  <div>
-                    <h3 className='text-2xl font-bold text-zinc-900'>Оплата</h3>
+                  <div className='flex flex-col'>
+                    <h3 className='flex flex-row items-center gap-3 text-2xl font-bold text-zinc-900'>
+                      <FiCreditCard />
+                      Оплата
+                    </h3>
                     <p className='my-4 text-zinc-500'>
                       У нас вы можете оплатить наличными, а также карточками
                       популярных платёжных систем.

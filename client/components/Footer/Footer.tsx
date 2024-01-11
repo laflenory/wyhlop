@@ -25,7 +25,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/' className='flex flex-row justify-between'>
+            <Link href='/about' className='flex flex-row justify-between'>
               О нас
               <div className='block text-2xl sm:hidden'>
                 <FiArrowUpRight />
@@ -33,7 +33,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/' className='flex flex-row justify-between'>
+            <Link href='/services' className='flex flex-row justify-between'>
               Услуги
               <div className='block text-2xl sm:hidden'>
                 <FiArrowUpRight />
@@ -41,7 +41,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/' className='flex flex-row justify-between'>
+            <Link href='/contacts' className='flex flex-row justify-between'>
               Контакты
               <div className='block text-2xl sm:hidden'>
                 <FiArrowUpRight />
@@ -49,7 +49,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className='text-zinc-400 hover:text-yellow-400'>
-            <Link href='/' className='flex flex-row justify-between'>
+            <Link href='/blog' className='flex flex-row justify-between'>
               Блог
               <div className='block text-2xl sm:hidden'>
                 <FiArrowUpRight />

@@ -5,7 +5,7 @@ import logotype from '@/public/logotype.png';
 
 const Desktop = () => {
   return (
-    <header className='fixed z-[9999] h-[80px] w-full border-b border-zinc-300 bg-white'>
+    <header className='h-[80px] w-full border-b border-zinc-300 bg-white'>
       <Wrapper>
         <div className='my-auto flex h-full items-center justify-between lg:p-8'>
           <Image src={logotype} width={60} height={60} alt='logotype' />
@@ -15,16 +15,16 @@ const Desktop = () => {
                 <Link href='/'>Главная</Link>
               </li>
               <li className='hover:text-yellow-400'>
-                <Link href='/'>О нас</Link>
+                <Link href='/about'>О нас</Link>
               </li>
               <li className='hover:text-yellow-400'>
-                <Link href='/'>Услуги</Link>
+                <Link href='/services'>Услуги</Link>
               </li>
               <li className='hover:text-yellow-400'>
-                <Link href='/'>Контакты</Link>
+                <Link href='/contacts'>Контакты</Link>
               </li>
               <li className='hover:text-yellow-400'>
-                <Link href='/'>Блог</Link>
+                <Link href='/blog'>Блог</Link>
               </li>
             </ul>
           </nav>

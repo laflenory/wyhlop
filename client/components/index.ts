@@ -1,6 +1,7 @@
 export { Accordion } from './Accordion';
 export { Alert } from './Alert';
 export { Blog } from './Blog';
+export { Development } from './Development';
 export { Feedback } from './Feedback';
 export { Footer } from './Footer';
 export { Header } from './Header';

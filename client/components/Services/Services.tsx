@@ -26,8 +26,10 @@ const Services = () => {
         <ul className='flex flex-row flex-wrap gap-4'>
           {services.map(({ heading }, index) => (
             <li
-              className={`cursor-pointer rounded-lg border-2 border-zinc-300 px-3 py-2 text-zinc-900 ${
-                active === index ? 'border-yellow-400 bg-yellow-400' : null
+              className={`cursor-pointer rounded-lg border-2 ${
+                active === index ? 'border-yellow-400' : 'border-zinc-300'
+              } px-3 py-2 text-zinc-900 ${
+                active === index ? 'bg-yellow-400' : ''
               } hover:border-yellow-300 hover:bg-yellow-300`}
               key={index}
               onClick={() => handleClick(index)}
